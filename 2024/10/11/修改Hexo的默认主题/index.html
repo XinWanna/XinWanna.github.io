@@ -6,18 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="本博客将记载本人所有学习笔记，欢迎批评指正~">
+    <meta name="description" content="[TOC]  1.选择合适的主题并修改Hexo的配置文件 ​	从Hexo主题官网中，选择自己喜欢的主题，本文以cactus主题为例。  下载主题 git clone https:&#x2F;&#x2F;github.com&#x2F;probberechts&#x2F;hexo-theme-cactus.git themes&#x2F;cactus     修改Hexo中的主题   Hexo下载位置 -&gt; _config.yml 在_con">
 <meta property="og:type" content="article">
 <meta property="og:title" content="修改Hexo的默认主题">
 <meta property="og:url" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/index.html">
 <meta property="og:site_name" content="XinWanna的杂货铺">
-<meta property="og:description" content="本博客将记载本人所有学习笔记，欢迎批评指正~">
+<meta property="og:description" content="[TOC]  1.选择合适的主题并修改Hexo的配置文件 ​	从Hexo主题官网中，选择自己喜欢的主题，本文以cactus主题为例。  下载主题 git clone https:&#x2F;&#x2F;github.com&#x2F;probberechts&#x2F;hexo-theme-cactus.git themes&#x2F;cactus     修改Hexo中的主题   Hexo下载位置 -&gt; _config.yml 在_con">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98.png">
+<meta property="og:image" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%BB%E9%A2%98.png">
+<meta property="og:image" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/%E4%BF%AE%E6%94%B9%E6%A0%87%E9%A2%98%E7%AD%89.png">
+<meta property="og:image" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/%E4%BF%AE%E6%94%B9%E5%AF%BC%E8%88%AA%E6%A0%8F.png">
+<meta property="og:image" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/%E4%BF%AE%E6%94%B9%E7%A4%BE%E4%BA%A4%E5%AA%92%E4%BD%93%E9%93%BE%E6%8E%A5.png">
+<meta property="og:image" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/%E6%98%BE%E7%A4%BA%E6%A0%87%E7%AD%BE.png">
+<meta property="og:image" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/%E8%AF%84%E8%AE%BA%E5%8C%BA.png">
+<meta property="og:image" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1.png">
+<meta property="og:image" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/%E6%96%B0%E5%BB%BA%E6%90%9C%E7%B4%A2%E9%A1%B5%E9%9D%A2.png">
+<meta property="og:image" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/%E6%90%9C%E7%B4%A2%E9%A1%B5%E9%9D%A2%E6%B7%BB%E5%8A%A0type.png">
 <meta property="article:published_time" content="2024-10-11T11:58:35.000Z">
-<meta property="article:modified_time" content="2024-10-11T11:59:04.014Z">
+<meta property="article:modified_time" content="2024-10-11T13:30:38.607Z">
 <meta property="article:author" content="XinWanna">
 <meta property="article:tag" content="essays">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98.png">
     
     
       
@@ -128,6 +139,10 @@
     </div>
     
     
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84%E4%B8%BB%E9%A2%98%E5%B9%B6%E4%BF%AE%E6%94%B9hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text"> 1.选择合适的主题并修改Hexo的配置文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E4%BF%AE%E6%94%B9hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text"> 2.修改Hexo的配置文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E4%B8%AA%E6%80%A7%E5%8C%96%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text"> 3.个性化修改主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA"><span class="toc-number">4.</span> <span class="toc-text"> 4.添加评论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E6%B7%BB%E5%8A%A0%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1"><span class="toc-number">5.</span> <span class="toc-text"> 5.添加流量统计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E6%B7%BB%E5%8A%A0hexo%E6%89%80%E6%8F%90%E4%BE%9B%E7%9A%84%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="toc-number">6.</span> <span class="toc-text"> 6.添加Hexo所提供的搜索功能</span></a></li></ol>
+      </div>
+    
   </span>
 </div>
 
@@ -170,7 +185,157 @@
   
 
   <div class="content e-content" itemprop="articleBody">
-    
+    <p>[TOC]</p>
+<h2 id="1选择合适的主题并修改hexo的配置文件"><a class="markdownIt-Anchor" href="#1选择合适的主题并修改hexo的配置文件"></a> 1.选择合适的主题并修改Hexo的配置文件</h2>
+<p>​	从<a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo主题</a>官网中，选择自己喜欢的主题，本文以<a target="_blank" rel="noopener" href="https://github.com/probberechts/hexo-theme-cactus">cactus</a>主题为例。</p>
+<ul>
+<li>下载主题 <code>git clone https://github.com/probberechts/hexo-theme-cactus.git themes/cactus</code></li>
+</ul>
+<img src="/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/下载主题.png" alt="下载Hexo主题">
+<ul>
+<li>
+<p>修改Hexo中的主题   <code>Hexo下载位置 -&gt; _config.yml</code></p>
+<p>在<code>_config.yml</code>中，找到 <code>theme</code>，修改为所选择的主题（以<code>cactus</code>为例）。</p>
+<img src="/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/修改主题配置文件主题.png" alt="修改配置文件主题">
+</li>
+</ul>
+<h2 id="2修改hexo的配置文件"><a class="markdownIt-Anchor" href="#2修改hexo的配置文件"></a> 2.修改Hexo的配置文件</h2>
+<p>​	这部分是在Hexo下载位置的<code>_config.yml</code>文件里修改。</p>
+<ul>
+<li>修改博客的标题、副标题等等</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">key</th>
+<th style="text-align:center">value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">title</td>
+<td style="text-align:center">博客标题</td>
+</tr>
+<tr>
+<td style="text-align:center">subtitle</td>
+<td style="text-align:center">副标题</td>
+</tr>
+<tr>
+<td style="text-align:center">description</td>
+<td style="text-align:center">描述</td>
+</tr>
+<tr>
+<td style="text-align:center">keywords</td>
+<td style="text-align:center">关键字</td>
+</tr>
+<tr>
+<td style="text-align:center">author</td>
+<td style="text-align:center">作者</td>
+</tr>
+<tr>
+<td style="text-align:center">language</td>
+<td style="text-align:center">语言（汉语填 <code>zh-CN</code>）</td>
+</tr>
+<tr>
+<td style="text-align:center">timezone</td>
+<td style="text-align:center">时区（中国时区填 <code>Asia/Shanghai</code>）</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">&#x27;XinWanna的杂货铺&#x27;</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">&#x27;菜鸟笔记&#x27;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&#x27;本博客将记载本人所有学习笔记，欢迎批评指正~&#x27;</span></span><br><span class="line"><span class="attr">keywords:</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">XinWanna</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">&#x27;Asia/Shanghai&#x27;</span></span><br></pre></td></tr></table></figure>
+<img src="/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/修改标题等.png" alt="修改标题等">
+<ul>
+<li>修改<code>post_asset_folder</code>为<code>true</code></li>
+</ul>
+<p>​	此处主要是为了创建文章时，可以创建与文件名的同名文件夹，用来存放文章中所涉及的图片，以便于使用相对路径来显示图片。</p>
+<h2 id="3个性化修改主题"><a class="markdownIt-Anchor" href="#3个性化修改主题"></a> 3.个性化修改主题</h2>
+<p>​	这部分是在<code>Hexo下载位置\themes\cactus（即所下载的主题文件）</code> 下的 <code>_config.yml</code>文件里修改。</p>
+<ul>
+<li>修改导航</li>
+</ul>
+<p>​	我将原有的导航修改成如下：<code>home</code>即为首页；<code>essays</code>即为所有文章的页面，这个的路径填写的是Hexo自带的文章汇总路径，即<code> /archives/</code>；<code>search</code>即为搜索页面，这个是Hexo所提供的搜索功能的页面，可以看后文如何使用Hexo所提供的搜索功能。</p>
+<p>​	除了使用Hexo自带的，也可以自己创建页面<code>npx hexo new page 页面名称</code>，<code>key</code>可以自己起，<code>value</code>即为创建页面的文件夹路径（例如：<code>Hexo下载位置\source\创建的文件夹</code>）。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">nav:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">essays:</span> <span class="string">/archives/</span></span><br><span class="line">  <span class="attr">search:</span> <span class="string">/search/</span></span><br></pre></td></tr></table></figure>
+<img src="/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/修改导航栏.png" alt="修改导航栏">
+<ul>
+<li>修改社交媒体链接</li>
+</ul>
+<p>​	我只保留了github，然后添加了知乎。关于<code>icon</code>的选择，可以使用 <a target="_blank" rel="noopener" href="https://fontawesome.com">fontawesome</a> 中所提供的商标，网站中所提供的商标名即为<code>icon</code>的内容。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social_links:</span></span><br><span class="line">  <span class="bullet">-</span></span><br><span class="line">    <span class="attr">icon:</span> <span class="string">github</span></span><br><span class="line">    <span class="attr">link:</span> <span class="string">https://github.com/XinWanna?tab=repositories</span></span><br><span class="line">  <span class="bullet">-</span></span><br><span class="line">    <span class="attr">icon:</span> <span class="string">zhihu</span></span><br><span class="line">    <span class="attr">link:</span> <span class="string">https://www.zhihu.com/people/WangQixin/posts</span></span><br></pre></td></tr></table></figure>
+<img src="/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/修改社交媒体链接.png" alt="修改社交媒体链接">
+<ul>
+<li>首页显示标签</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">tags_overview:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<img src="/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/显示标签.png" alt="显示标签">
+<ul>
+<li>修改首页所显示的文章个数</li>
+</ul>
+<p>​	默认显示5个，如果想要显示全部，注释掉 <code>post_count: 5</code> ,然后加上 <code>show_all_posts: true</code> 这句话。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">posts_overview:</span></span><br><span class="line">  <span class="comment"># show_all_posts: true</span></span><br><span class="line">  <span class="attr">post_count:</span> <span class="number">5</span></span><br><span class="line">  <span class="attr">sort_updated:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改版权年份</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">copyright:</span></span><br><span class="line">  <span class="attr">start_year:</span> <span class="number">2024</span></span><br><span class="line">  <span class="attr">end_year:</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改logo设置</li>
+</ul>
+<p>​	具体说明看文件中的说明即可：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">Options:</span></span><br><span class="line">   <span class="bullet">-</span> <span class="attr">enabled:</span> <span class="string">whether</span> <span class="string">to</span> <span class="string">show</span> <span class="string">(true)</span> <span class="string">or</span> <span class="string">hide</span> <span class="string">(false)</span> <span class="string">the</span> <span class="string">logo.</span></span><br><span class="line">   <span class="bullet">-</span> <span class="attr">width:</span> <span class="string">width</span> <span class="string">of</span> <span class="string">the</span> <span class="string">logo</span> <span class="string">in</span> <span class="string">pixel</span> <span class="string">units</span></span><br><span class="line">   <span class="bullet">-</span> <span class="attr">height:</span> <span class="string">height</span> <span class="string">of</span> <span class="string">the</span> <span class="string">logo</span> <span class="string">in</span> <span class="string">pixel</span> <span class="string">units</span></span><br><span class="line">   <span class="bullet">-</span> <span class="attr">url:</span> <span class="string">where</span> <span class="string">the</span> <span class="string">logo</span> <span class="string">can</span> <span class="string">be</span> <span class="string">found</span></span><br><span class="line">   <span class="bullet">-</span> <span class="attr">gravatar:</span> <span class="string">whether</span> <span class="string">to</span> <span class="string">use</span> <span class="string">your</span> <span class="string">Gravatar</span> <span class="string">as</span> <span class="string">the</span> <span class="string">logo</span></span><br><span class="line">   <span class="bullet">-</span> <span class="attr">grayout:</span> <span class="string">whether</span> <span class="string">to</span> <span class="string">enable</span> <span class="string">a</span> <span class="string">hover</span> <span class="string">effect</span> <span class="string">on</span> <span class="string">the</span> <span class="string">logo</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">logo:</span></span><br><span class="line">  <span class="attr">enabled:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">width:</span> <span class="number">50</span></span><br><span class="line">  <span class="attr">height:</span> <span class="number">50</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">/images/icon_logo.png</span></span><br><span class="line">  <span class="attr">gravatar:</span> <span class="literal">false</span></span><br><span class="line">  <span class="comment"># grayout: true</span></span><br><span class="line">  <span class="attr">grayout:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改网站图标</li>
+</ul>
+<p>​	虽然文件中有说明所使用的图标大小，但我并未严格设置，没有影响，可以正常显示。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">favicon:</span></span><br><span class="line">  <span class="attr">desktop:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">/images/icon_logo.png</span></span><br><span class="line">    <span class="attr">gravatar:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">android:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">/images/icon_logo.png</span></span><br><span class="line">    <span class="attr">gravatar:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">apple:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">/images/icon_logo_black.png</span></span><br><span class="line">    <span class="attr">gravatar:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>选择颜色主题</li>
+</ul>
+<p>​	<code>cactus</code>支持的颜色主题有四种：dark, light, classic and white</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">colorscheme:</span> <span class="string">dark</span></span><br></pre></td></tr></table></figure>
+<h2 id="4添加评论"><a class="markdownIt-Anchor" href="#4添加评论"></a> 4.添加评论</h2>
+<p>​	<code>cactus</code>支持两种，一个是 <code>Disqus</code>,一个是 <code>Utterances</code>，我使用的是<code>Disqus</code>。</p>
+<ul>
+<li>
+<p>从 <a target="_blank" rel="noopener" href="http://disqus.com/admin/create/">Disqus</a>官网中为博客创建一个项目，一路跟着指引即可，并获取到项目的 <code>shortname</code>（<code>shortname</code>是创建完项目后，查看页面链接，链接中就包含了<code>shortname</code>,<a target="_blank" rel="noopener" href="https://shortname.disqus.com/">https://shortname.disqus.com/</a> 。当项目的名称为中文时，一定要根据链接来寻找 <code>shortname</code>，否则会出错）。</p>
+</li>
+<li>
+<p>获取到<code>shortname</code>后，修改配置文件</p>
+</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">disqus:</span></span><br><span class="line">  <span class="attr">enabled:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="string">XXXXXXX</span> <span class="comment"># 替换为自己的 shortname</span></span><br></pre></td></tr></table></figure>
+<p>​	配置完成后，就可以看到每篇文章下会有评论区。</p>
+<img src="/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/评论区.png" alt="评论区">
+<h2 id="5添加流量统计"><a class="markdownIt-Anchor" href="#5添加流量统计"></a> 5.添加流量统计</h2>
+<p>​	<code>cactus</code>支持四种，分别是 <code>Google</code>, <code>Baidu</code>, <code>Cloudflare</code> or <code>Umami Analytics</code> ，我使用的是<code>Baidu</code>。</p>
+<ul>
+<li>从<a target="_blank" rel="noopener" href="https://tongji.baidu.com">百度统计</a>中创建项目，创建完成后，按照下面所示，获取到id（第三处打码部分就是）。</li>
+</ul>
+<img src="/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/百度统计.png" alt="百度统计id">
+<ul>
+<li>更改配置文件中的百度统计的id</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">baidu_analytics:</span></span><br><span class="line">  <span class="attr">enabled:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">id:</span> <span class="string">XXXXXXX</span> <span class="comment"># 替换为自己的id</span></span><br></pre></td></tr></table></figure>
+<h2 id="6添加hexo所提供的搜索功能"><a class="markdownIt-Anchor" href="#6添加hexo所提供的搜索功能"></a> 6.添加Hexo所提供的搜索功能</h2>
+<p>​	以下均在Hexo的目录下，打开<code>Git Bash Here</code>后，输入命令。</p>
+<ul>
+<li>安装插件 <code>npm install hexo-generator-search --save</code></li>
+</ul>
+<p>​	若报网络错误，科学上网多试几次。</p>
+<ul>
+<li>新建搜索页面 <code>npx hexo new page search</code></li>
+</ul>
+<img src="/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/新建搜索页面.png" alt="新建搜索页面">
+<ul>
+<li>为新的页面添加 <code>type</code></li>
+</ul>
+<p>​	根据上面的路径，打开 <code>index.md</code>文件，并添加 <code>type</code>。</p>
+<img src="/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/搜索页面添加type.png" alt="搜索页面添加type">
+<ul>
+<li>在配置文件导航中，添加搜索页面，即为 <code>第三部分中的修改导航部分</code></li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">nav:</span></span><br><span class="line">  <span class="attr">search:</span> <span class="string">/search/</span></span><br></pre></td></tr></table></figure>
+
   </div>
 </article>
 
@@ -200,6 +365,10 @@
 
     
     
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84%E4%B8%BB%E9%A2%98%E5%B9%B6%E4%BF%AE%E6%94%B9hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text"> 1.选择合适的主题并修改Hexo的配置文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E4%BF%AE%E6%94%B9hexo%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">2.</span> <span class="toc-text"> 2.修改Hexo的配置文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E4%B8%AA%E6%80%A7%E5%8C%96%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98"><span class="toc-number">3.</span> <span class="toc-text"> 3.个性化修改主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA"><span class="toc-number">4.</span> <span class="toc-text"> 4.添加评论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E6%B7%BB%E5%8A%A0%E6%B5%81%E9%87%8F%E7%BB%9F%E8%AE%A1"><span class="toc-number">5.</span> <span class="toc-text"> 5.添加流量统计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E6%B7%BB%E5%8A%A0hexo%E6%89%80%E6%8F%90%E4%BE%9B%E7%9A%84%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="toc-number">6.</span> <span class="toc-text"> 6.添加Hexo所提供的搜索功能</span></a></li></ol>
+      </div>
+    
 
     <div id="share-footer" style="display: none">
       <ul>
@@ -220,6 +389,8 @@
 
     <div id="actions-footer">
         <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
         
         <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
         <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
