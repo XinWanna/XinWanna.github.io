@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="1.Hexo创建文章、Hexo创建页面  创建文章命令：npx hexo new post 文章名字   ​	根据路径查找，可以看到同时创建了同名的.md文件和文件夹，.md文件用来编写文章，同名的文件夹用来存放文章所涉及到的图片。   创建页面命令：npx hexo new page 页面名称   ​	根据路径查找，可以看到创建了一个search文件夹。   2.编写文章 ​	编写.md文件可">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo+Typora写博客">
+<meta property="og:url" content="http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="XinWanna的杂货铺">
+<meta property="og:description" content="1.Hexo创建文章、Hexo创建页面  创建文章命令：npx hexo new post 文章名字   ​	根据路径查找，可以看到同时创建了同名的.md文件和文件夹，.md文件用来编写文章，同名的文件夹用来存放文章所涉及到的图片。   创建页面命令：npx hexo new page 页面名称   ​	根据路径查找，可以看到创建了一个search文件夹。   2.编写文章 ​	编写.md文件可">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.png">
+<meta property="og:image" content="http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0-1.png">
+<meta property="og:image" content="http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2-1.png">
+<meta property="og:image" content="http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2-2.png">
+<meta property="og:image" content="http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E4%B8%8D%E6%AD%A3%E7%A1%AE%E7%9A%84%E5%9B%BE%E5%83%8F%E8%B7%AF%E5%BE%84.png">
+<meta property="og:image" content="http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E4%BF%AE%E6%94%B9Typora%E7%9A%84%E9%85%8D%E7%BD%AE.jpg">
+<meta property="article:published_time" content="2024-10-11T14:38:00.000Z">
+<meta property="article:modified_time" content="2024-10-11T15:09:40.487Z">
+<meta property="article:author" content="XinWanna">
+<meta property="article:tag" content="Hexo+Github搭建个人博客.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/icon_logo.png">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/icon_logo.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/icon_logo_black.png">
+        
+      
+    
+    <!-- title -->
+    <title>Hexo+Typora写博客</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NZK4DSLKN"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0NZK4DSLKN');
+  </script>
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="目录"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="顶部" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/archives/">文章</a></li><!--
+     --><!--
+       --><li><a href="/search/">搜索</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/2024/10/11/%E4%BF%AE%E6%94%B9Hexo%E7%9A%84%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="分享文章" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&text=Hexo+Typora写博客"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&title=Hexo+Typora写博客"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&is_video=false&description=Hexo+Typora写博客"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Hexo+Typora写博客&body=Check out this article: http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&title=Hexo+Typora写博客"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&title=Hexo+Typora写博客"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&title=Hexo+Typora写博客"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&title=Hexo+Typora写博客"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&name=Hexo+Typora写博客&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&t=Hexo+Typora写博客"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1hexo%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0-hexo%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2"><span class="toc-number">1.</span> <span class="toc-text"> 1.Hexo创建文章、Hexo创建页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E7%BC%96%E5%86%99%E6%96%87%E7%AB%A0"><span class="toc-number">2.</span> <span class="toc-text"> 2.编写文章</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Hexo+Typora写博客
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">XinWanna</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-10-11T14:38:00.000Z" class="dt-published" itemprop="datePublished">2024-10-11</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Hexo-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="tag">Hexo+Github搭建个人博客.</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h2 id="1hexo创建文章-hexo创建页面"><a class="markdownIt-Anchor" href="#1hexo创建文章-hexo创建页面"></a> 1.Hexo创建文章、Hexo创建页面</h2>
+<ul>
+<li>创建文章命令：<code>npx hexo new post 文章名字</code></li>
+</ul>
+<p><img src="/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0.png" alt></p>
+<p>​	根据路径查找，可以看到同时创建了同名的<code>.md</code>文件和文件夹，<code>.md</code>文件用来编写文章，同名的文件夹用来存放文章所涉及到的图片。</p>
+<p><img src="/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0-1.png" alt="创建文章"></p>
+<ul>
+<li>创建页面命令：<code>npx hexo new page 页面名称</code></li>
+</ul>
+<p><img src="/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2-1.png" alt="创建页面"></p>
+<p>​	根据路径查找，可以看到创建了一个<code>search</code>文件夹。</p>
+<p><img src="/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2-2.png" alt="创建页面"></p>
+<h2 id="2编写文章"><a class="markdownIt-Anchor" href="#2编写文章"></a> 2.编写文章</h2>
+<p>​	编写<code>.md</code>文件可以使用<code>Typora</code>编辑器，基于<code>markdown</code>语言进行编写。需要注意的是，如果需要进行分类，需要在文章前面的<code>type</code>处，填写上类名（可以已存在，也可以不存在，相当于新建一个类）。</p>
+<p>​	编写过程中，可能会遇到插入图片失败的问题，解决办法如下：</p>
+<ul>
+<li>
+<p>首先就是，将 <code>Hexo</code>的配置文件<code>_config.yml</code>中的<code>post_asset_folder</code>设置为<code>true</code>。这样每次创建文章的时候，会生成一个同名文件夹来存放图片，以便于图像显示。</p>
+</li>
+<li>
+<p>下载 <code>hexo-asset-img</code>插件 <code>npm install hexo-asset-imag --save</code></p>
+<p><code>hexo-asset-imge</code>插件已被弃用，因此下载<code>hexo-asset-img</code>插件。但我下载完毕后，发现在 <code>node_modules</code>中，两个插件同时存在😥😔</p>
+</li>
+<li>
+<p>由于当把图片插入到<code>Typora</code>时，一般为<strong>绝对</strong>地址，且<mark>Windows中的地址分隔符为 \ 而Hexo所支持的分隔符为/</mark>。因此，需要修改<code>Typora</code>的默认配置。</p>
+</li>
+</ul>
+<p>​		当不修改<code>Typora</code>的配置时，页面无法正常显示图片，此时的图片路径不正确，如下所示：</p>
+<p><img src="/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E4%B8%8D%E6%AD%A3%E7%A1%AE%E7%9A%84%E5%9B%BE%E5%83%8F%E8%B7%AF%E5%BE%84.png" alt="不正确的图像路径"></p>
+<p>​		修改<code>Typora</code>的配置：</p>
+<p><img src="/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/%E4%BF%AE%E6%94%B9Typora%E7%9A%84%E9%85%8D%E7%BD%AE.jpg" alt="修改Typora的配置"></p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>加载评论需要在浏览器启用 JavaScript 脚本支持。</noscript>
+        </div>
+    </div>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">首页</a></li>
+        
+          <li><a href="/archives/">文章</a></li>
+        
+          <li><a href="/search/">搜索</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1hexo%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0-hexo%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2"><span class="toc-number">1.</span> <span class="toc-text"> 1.Hexo创建文章、Hexo创建页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E7%BC%96%E5%86%99%E6%96%87%E7%AB%A0"><span class="toc-number">2.</span> <span class="toc-text"> 2.编写文章</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&text=Hexo+Typora写博客"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&title=Hexo+Typora写博客"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&is_video=false&description=Hexo+Typora写博客"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Hexo+Typora写博客&body=Check out this article: http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&title=Hexo+Typora写博客"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&title=Hexo+Typora写博客"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&title=Hexo+Typora写博客"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&title=Hexo+Typora写博客"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&name=Hexo+Typora写博客&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2024/10/11/Hexo-Typora%E5%86%99%E5%8D%9A%E5%AE%A2/&t=Hexo+Typora写博客"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2024
+    XinWanna
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/archives/">文章</a></li><!--
+     --><!--
+       --><li><a href="/search/">搜索</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板！\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功！");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+  <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?7bbb8c73698ee32007c733bcd387b721";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'xinwannade-za-huo-pu';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+<!-- utterances Comments -->
+
+</body>
+</html>
